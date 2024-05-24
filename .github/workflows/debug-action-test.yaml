@@ -1,0 +1,13 @@
+name: Test hmarr/debug-action
+
+on:
+  workflow_dispatch:
+
+env:
+  TOKENS: ${{ secrets.GH_ACCESS_LIST_OF_TOKENS }}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: hmarr/debug-action@v3 
